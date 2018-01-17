@@ -26,7 +26,6 @@ class NPTwitterParser: NSObject {
     
     public weak var delegate : NPTwitterParserDelegate?
     
-    
     override init() {
         
         super.init()
@@ -57,7 +56,6 @@ class NPTwitterParser: NSObject {
                         self.delegate?.twitterParsingCompleted(self)
                     }
                 }
-                
             } else {
                 
                 self.error = error
@@ -75,7 +73,5 @@ class NPTwitterParser: NSObject {
         self.authToken = session.authToken
         self.authTokenSecret = session.authTokenSecret
         self.error = nil
-        
-        
     }
 }
